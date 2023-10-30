@@ -197,7 +197,7 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    {/* <Image src={project?.image} /> */}
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -227,7 +227,7 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {/* <Button href={project?.webapp} target='new'>View Live App</Button> */}
                     </ButtonGroup>
                 </Wrapper>
             </Container>

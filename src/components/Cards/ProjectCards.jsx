@@ -17,7 +17,7 @@ const Button = styled.button`
 `
 const Card = styled.div`
     width: 330px;
-    height: 490px;
+    height: 235px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
@@ -125,22 +125,22 @@ const Avatar = styled.img`
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
-            <Tags>
-                {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
-                ))}
-            </Tags>
+            {/* <Image src={project.image}/> */}
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <Members>
+            <Tags>
+                {project.tags?.map((tag, index) => (
+                <Tag>{tag}</Tag>
+                ))}
+            </Tags>
+            {/* <Members>
                 {project.member?.map((member) => (
                     <Avatar src={member.img}/>
                 ))}
-            </Members>
+            </Members> */}
             {/* <Button>View Project</Button> */}
         </Card>
     )

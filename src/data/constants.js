@@ -150,7 +150,7 @@ export const experiences = [
     role: "Software Developer Intern",
     company: "HBeonLabs Technologies Pvt. Ltd.",
     date: "August 2023 - October 2023",
-    desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+    desc: "Created the POC of the software of a semi self driving train through lane detection and drowsiness detection. Internship at HbeonLabs Technologies helped me at experimental learning segmentation in image classification for the usecase.",
     skills: [
       "ML",
       "Python",
@@ -408,46 +408,46 @@ export const projects = [
     title: "Stealth Stories",
     date: "July 2023",
     description:
-      "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
+      "Uses Facial security system through facial coordinates for enhance security of you personal diary.Has an emailing client attached to email the user if a foreign face opens it. Has encryption algorithm baked in to encrypt notes Stores the encrypted message in a sql DB.",
     image:
       "https://camo.githubusercontent.com/cd07010cbeb90cb1b43a5d6162784326aef02210ef7d41a0f9ae043b3e392378/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
     tags: ["Python", "ML"],
-    category: "web app",
-    github: "https://github.com/rishavchanda/Breaking-Bad",
-    webapp: "https://breaking-bad-webapp.netlify.app",
+    category: "machine learning",
+    github: "https://github.com/AdibaFaiyaz/StealthStories",
+    // webapp: "https://breaking-bad-webapp.netlify.app",
   },
   {
     id: 7,
-    title: "Quiz App",
+    title: "Segmentation",
     date: "Dec 2020 - Jan 2021",
     description:
-      "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
-    image:
-      "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
-    tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-    category: "android app",
-    github: "https://github.com/rishavchanda/Quiz-Earn",
-    webapp: "https://github.com/rishavchanda/Quiz-Earn",
+      "Segments road for autonomous lane tracking. Uses the yolov8 architecture",
+    // image:
+    //   "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
+    tags: ["Python", "ML"],
+    category: "machine learning",
+    github: "https://github.com/AdibaFaiyaz/Segmentation",
+    // webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
   {
     id: 8,
-    title: "Face Recognition",
+    title: "Deepfake Detector",
     date: "Jan 2021",
     description:
-      "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-    image:
-      "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+      "Designed to identify and distinguish deepfake videos or images from authentic, unaltered content. Uses a transfer learning based architecture derived from VGG16",
+    // image:
+    //   "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
+    tags: ["Python", "ML",],
     category: "machine learning",
-    github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-    webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+    github: " ",
+    // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
   },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];
+// export const TimeLineData = [
+//   { year: 2017, text: "Started my journey" },
+//   { year: 2018, text: "Worked as a freelance developer" },
+//   { year: 2019, text: "Founded JavaScript Mastery" },
+//   { year: 2020, text: "Shared my projects with the world" },
+//   { year: 2021, text: "Started my own platform" },
+// ];
