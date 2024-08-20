@@ -9,7 +9,7 @@ export const Bio = {
     "I am a proficient and versatile full-stack developer with a strong command of the entire software development stack. My commitment to staying up-to-date with the latest industry trends and best practices ensures that I can effectively tackle any project. ",
   github: "https://github.com/AdibaFaiyaz",
   resume:
-    "https://drive.google.com/file/d/10E54YBDJzsSNCF_hfegjFFZvn9iKBqvE/view?usp=share_link",
+    "https://drive.google.com/file/d/1tjUDD-DNEXD6v0gr9T_TJAuiL0yfaXHi/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/adiba-faiyaz-623b87294/",
   // twitter: "https://twitter.com/username",
   insta: "https://www.instagram.com/_adibafaiyaz_/",
