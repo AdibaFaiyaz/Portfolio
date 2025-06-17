@@ -196,9 +196,9 @@ export const ResumeButton = styled.a`
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, ${({ theme }) => theme.primary} 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
     border: none;
-    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
     position: relative;
     overflow: hidden;
     
@@ -215,7 +215,7 @@ export const ResumeButton = styled.a`
     
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
         
         &:before {
             left: 0;
@@ -225,14 +225,14 @@ export const ResumeButton = styled.a`
     &:active {
         transform: translateY(0);
     }
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #1d4ed8 100%);
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;
     &:hover {
         transform: scale(1.05);
     transition: all 0.4s ease-in-out;
     box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+    filter: brightness(1.1);
     }    
     
     
