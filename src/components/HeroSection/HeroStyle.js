@@ -184,61 +184,35 @@ export const SubTitle = styled.div`
 `;
 
 export const ResumeButton = styled.a`
-    appearance: button;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 32px;
-    color: white;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    border: none;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    position: relative;
-    overflow: hidden;
-    
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
-        transition: left 0.3s ease;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  color: rgba(96, 165, 250, 0.9);
+  cursor: pointer;
+  padding: 16px 32px;
+  font-weight: 500;
+  text-decoration: none;  font-size: 16px;
+  width: 25%;
+  background: rgba(96, 165, 250, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 15px rgba(96, 165, 250, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+    :hover {
+      background: rgba(96, 165, 250, 0.15);
+      border: 1px solid rgba(96, 165, 250, 0.5);
+      color: rgba(96, 165, 250, 1);
+      transform: translateY(-1px);
+      box-shadow: 
+        0 6px 20px rgba(96, 165, 250, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
-    
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-        
-        &:before {
-            left: 0;
-        }
-    }
-    
-    &:active {
-        transform: translateY(0);
-    }
-    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #1d4ed8 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1.1);
-    }    
-    
-    
     @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 70%;
     } 
-
 `;

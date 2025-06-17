@@ -5,5 +5,5 @@ export const AnimationContainer = styled.div`
   height: 500px;
   position: relative;
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
 `;

@@ -38,13 +38,13 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
     width: 80%;    
-    padding: 0 6px;
+    padding: 15px 6px 0 6px;
     display: flex;
     justify-content: start;
     align-items: center;
     text-decoration: none;
     @media (max-width: 640px) {
-      padding: 0 0px;
+      padding: 15px 0px 0 0px;
   }
 `;
 export const Span = styled.div`
@@ -110,22 +110,32 @@ export const NavLink = styled.a`
 
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 1px solid rgba(96, 165, 250, 0.3);
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  border-radius: 12px;
+  color: rgba(96, 165, 250, 0.9);
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
+  background: rgba(96, 165, 250, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 15px rgba(96, 165, 250, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
     :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};     
+      background: rgba(96, 165, 250, 0.15);
+      border: 1px solid rgba(96, 165, 250, 0.5);
+      color: rgba(96, 165, 250, 1);
+      transform: translateY(-1px);
+      box-shadow: 
+        0 6px 20px rgba(96, 165, 250, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;
