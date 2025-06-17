@@ -2,20 +2,23 @@ import styled from "styled-components";
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background: linear-gradient(135deg, ${({ theme }) => theme.bg} 0%, rgba(96, 165, 250, 0.05) 100%);
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 120px 30px 80px;
+  min-height: 100vh;
+  overflow: hidden;
+  
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    padding: 100px 16px 60px;
+    min-height: 90vh;
   }
-  @media (max-width: 640) {
-    padding: 32px 16px;
+  @media (max-width: 640px) {
+    padding: 80px 16px 40px;
+    min-height: 85vh;
   }
   z-index: 1;
-
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
 export const HeroBg = styled.div`
@@ -33,12 +36,13 @@ export const HeroBg = styled.div`
   padding: 0 30px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  opacity: 0.6;
 
   @media (max-width: 960px) {
     justify-content: center;
-    padding: 0 0px;
+    padding: 0;
+    opacity: 0.4;
   }
 `;
 
@@ -114,34 +118,44 @@ export const Img = styled.img`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 3.5rem;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, ${({ theme }) => theme.text_primary} 0%, ${({ theme }) => theme.primary} 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
   @media (max-width: 960px) {
     text-align: center;
+    font-size: 3rem;
   }
 
   @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
   }
 `;
 
 export const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
-  line-height: 68px;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+  
   @media (max-width: 960px) {
     text-align: center;
+    font-size: 1.8rem;
   }
   @media (max-width: 640px) {
-    font-size: 22px;
-    line-height: 48px;
-    margin-bottom: 16px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -151,39 +165,66 @@ export const Span = styled.span`
 `;
 
 export const SubTitle = styled.div`
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 42px;
-  color: ${({ theme }) => theme.text_primary + 95};
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: ${({ theme }) => theme.text_secondary};
+  max-width: 600px;
 
   @media (max-width: 960px) {
     text-align: center;
+    font-size: 1.1rem;
   }
 
   @media (max-width: 640px) {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 `;
 
 export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 16px;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    color: white;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, ${({ theme }) => theme.primary} 0%, #8b5cf6 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+    position: relative;
+    overflow: hidden;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+        transition: left 0.3s ease;
+    }
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+        
+        &:before {
+            left: 0;
+        }
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
     background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     box-shadow:  20px 20px 60px #1F2634,
     -20px -20px 60px #1F2634;

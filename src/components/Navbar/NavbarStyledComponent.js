@@ -3,17 +3,26 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
-    height: 80px;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(96, 165, 250, 0.2);
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        border-bottom: 1px solid rgba(96, 165, 250, 0.4);
+    }
+    
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.8s all ease;
+        height: 60px;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -44,13 +53,13 @@ export const Span = styled.div`
     font-size: 18px;
 `;
 export const NavItems = styled.ul`
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content:center;
-    gap: 32px;
-    padding: 0 6px;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
     list-style: none;
+    margin: 0;
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -60,15 +69,42 @@ export const NavItems = styled.ul`
 export const NavLink = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease;
     text-decoration: none;
-    :hover {
-      color: ${({ theme }) => theme.primary};
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 8px;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, ${({ theme }) => theme.primary}, #8b5cf6);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+    
+    &:hover {
+        color: ${({ theme }) => theme.primary};
+        background: rgba(96, 165, 250, 0.1);
+        
+        &:before {
+            width: 80%;
+        }
     }
 
     &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
+        color: ${({ theme }) => theme.primary};
+        background: rgba(96, 165, 250, 0.15);
+        
+        &:before {
+            width: 80%;
+        }
     }
 `;
 

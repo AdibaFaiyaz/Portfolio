@@ -13,8 +13,8 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <img src={lg} width={"50px"} />
+          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer' }}>
+            <img src={lg} width={"50px"} alt="Logo" />
             <Span></Span>
           </a>
         </NavLogo>

@@ -59,29 +59,54 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 18px 36px;
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 20px;
+  padding: 24px 32px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.5), transparent);
+  }
+  
+  &:hover {
+    border-color: rgba(96, 165, 250, 0.4);
+    background: rgba(26, 26, 26, 0.85);
+    transform: translateY(-8px);
+    box-shadow: 
+      0 25px 50px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(96, 165, 250, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 20px 24px;
   }
   @media (max-width: 500px) {
     max-width: 330px;
-    padding: 10px 36px;
+    padding: 16px 20px;
   }
-
-
 `
 
 const SkillTitle = styled.h2`
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   margin-bottom: 20px;
   text-align: center;
+  background: linear-gradient(135deg, ${({ theme }) => theme.text_primary} 0%, ${({ theme }) => theme.primary} 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 `
 
 const SkillList = styled.div`
@@ -93,16 +118,25 @@ const SkillList = styled.div`
 `
 
 const SkillItem = styled.div`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 12px;
-  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_primary};
+  background: rgba(96, 165, 250, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 12px;  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(96, 165, 250, 0.2);
+    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-2px);
+  }
+  
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
@@ -116,6 +150,7 @@ const SkillItem = styled.div`
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  filter: brightness(1.2);
 `
 
 

@@ -12,31 +12,44 @@ const HeroSection = () => {
                 <HeroBg>
                     <HeroBgAnimation />
                 </HeroBg>
-                <HeroInnerContainer >
+                <HeroInnerContainer>
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
-                        <TextLoop>
+                        <Title className="animate-slideInLeft stagger-1">
+                            Hi, I am <br /> 
+                            <span className="gradient-text-animated">{Bio.name}</span>
+                        </Title>
+                        <TextLoop className="animate-slideInLeft stagger-2">
                             I am a
-                            <Span>
+                            <Span className="typewriter-glow">
                                 <Typewriter
                                     options={{
                                         strings: Bio.roles,
                                         autoStart: true,
                                         loop: true,
+                                        delay: 75,
+                                        deleteSpeed: 50,
+                                        cursor: '|',
+                                        cursorClassName: 'typewriter-cursor'
                                     }}
                                 />
                             </Span>
                         </TextLoop>
-                        <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Resume</ResumeButton>
+                        <SubTitle className="animate-fadeInLeft stagger-3">
+                            {Bio.description}
+                        </SubTitle>
+                        <ResumeButton 
+                            className="animate-bounceIn stagger-4"
+                            href={Bio.resume} 
+                            target='display'
+                        >
+                            Resume
+                        </ResumeButton>
                     </HeroLeftContainer>
 
-                    <HeroRightContainer id="Right">
-
+                    <HeroRightContainer id="Right" className="animate-slideInRight stagger-5">
                         {/* <Img src={HeroImg} alt="hero-image" /> */}
                     </HeroRightContainer>
                 </HeroInnerContainer>
-
             </HeroContainer>
         </div>
     )

@@ -2,14 +2,18 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    background: ${({ theme }) => theme.bg};
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 1;
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+    padding: 80px 0;
+    
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -19,11 +23,17 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1350px;
-    padding: 10px 0px 100px 0;
-    gap: 12px;
+    max-width: 1200px;
+    padding: 0 20px;
+    gap: 60px;
+    
     @media (max-width: 960px) {
         flex-direction: column;
+        gap: 40px;
+    }
+    
+    @media (max-width: 640px) {
+        padding: 0 16px;
     }
 `;
 
