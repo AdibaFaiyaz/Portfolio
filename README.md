@@ -19,7 +19,7 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/AdibaFaiyaz/Portfolio.git
 cd portfolio
 npm install
 npm run dev
