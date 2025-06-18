@@ -9,10 +9,10 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 0 80px 0;
     
     @media (max-width: 768px) {
-        padding: 60px 0;
+        padding: 0 0 60px 0;
     }
 `;
 
@@ -24,12 +24,11 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px;
-    gap: 60px;
+    padding: 0 20px;    gap: 20px;
     
     @media (max-width: 960px) {
         flex-direction: column;
-        gap: 40px;
+        gap: 15px;
     }
     
     @media (max-width: 640px) {
@@ -41,10 +40,10 @@ export const Title = styled.div`
 font-size: 42px;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
+margin-top: 10px;
   color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
-      margin-top: 12px;
+      margin-top: 40px;
       font-size: 32px;
   }
 `;
@@ -66,8 +65,7 @@ export const ToggleButtonGroup = styled.div`
     color: ${({ theme }) => theme.primary};
     font-size: 16px;
     border-radius: 12px;
-    font-weight: 500;
-    margin: 22px 0px;
+    font-weight: 500;    margin: 20px 0px;
     @media (max-width: 768px) {
         font-size: 12px;
     }

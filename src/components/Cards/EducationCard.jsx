@@ -65,11 +65,10 @@ const Card = styled.div`
         height: 1px;
         background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.5), transparent);
     }
-    
-    &:hover{
+      &:hover{
         border-color: rgba(96, 165, 250, 0.4);
         background: rgba(26, 26, 26, 0.85);
-        transform: translateY(-8px);
+        transform: translateY(-8px) scale(1.02);
         box-shadow: 
             0 25px 50px rgba(0, 0, 0, 0.3),
             0 0 0 1px rgba(96, 165, 250, 0.1),
@@ -83,14 +82,11 @@ const Card = styled.div`
 
     &:hover ${Document}{
         display: flex;
-    }
-
-    &:hover ${Span}{
+    }    &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
 `
 
 const Top = styled.div`

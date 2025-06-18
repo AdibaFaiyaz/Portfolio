@@ -28,11 +28,29 @@ const Body = styled.div`
 `
 
 const Section = styled.section`
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   
   @media (max-width: 768px) {
-    padding: 60px 0;
+    padding: 30px 0;
+  }
+`
+
+const ExperienceSection = styled.section`
+  padding: 40px 0 0 0;
+  position: relative;
+  
+  @media (max-width: 768px) {
+    padding: 30px 0 0 0;
+  }
+`
+
+const ProjectsSection = styled.section`
+  padding: 0 0 40px 0;
+  position: relative;
+  
+  @media (max-width: 768px) {
+    padding: 0 0 30px 0;
   }
 `
 function App() {
@@ -44,16 +62,14 @@ function App() {
         <GlobalBackground />
         <Navbar />
         <Body>
-          <HeroSection />
-          <Section>
+          <HeroSection />          <Section>
             <Skills />
-          </Section>
-          <Section>
+          </Section>          <ExperienceSection>
             <Experience />
-          </Section>
-          <Section>
+          </ExperienceSection>
+          <ProjectsSection>
             <Projects openModal={openModal} setOpenModal={setOpenModal} />
-          </Section>
+          </ProjectsSection>
           <Section>
             <Education />
           </Section>
