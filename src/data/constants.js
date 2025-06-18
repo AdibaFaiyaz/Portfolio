@@ -224,22 +224,22 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://ww2.freelogovectors.net/wp-content/uploads/2023/01/vitlogo-freelogovectors.net_.png",
+    img: "https://findlogovector.com/wp-content/uploads/2022/05/vellore-institute-of-technology-vit-logo-vector-2022.png",
     school: "Vellore Institute of Technology, Vellore",
-    date: "September 2021 - July 2025",
+    date: "Sept 2021 - Jul 2025",
     grade: "8.71 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering with Specialization in Internet of Things at Vellore Institute of Technology, Vellore.",
     degree: "BTech - Computer Science and Engineering",
   },
-  // {
-  //   id: 1,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-  //   school: "Methodist School, Dankuni",
-  //   date: "Apr 2019 - Apr 2025",
-  //   grade: "88.2%",
-  //   desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-  //   degree: "ISC(XII), Science with Computer",
-  // },
+   {
+     id: 1,
+     img: "https://content.jdmagicbox.com/comp/birbhum/p8/9999p3462.3462.170608120829.a8p8/catalogue/ryan-international-school-birbhum-schools-18cnauq1p1.jpg",
+     school: "Ryan International School, Noida",
+     date: "Apr 2017 - Apr 2019",
+     grade: "88.2%",
+     desc: "I completed my school education at Ryan, where I learnt collaborating with people and how to lead teams.",
+     degree: "CBSE",
+   },
   // {
   //   id: 2,
   //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
@@ -373,7 +373,7 @@ export const projects = [
      image:
        "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
      tags: ["Python", "Flutter"],
-     category: "android app",
+     category: "internet of things",
      github: "",
      webapp: "",
     },
@@ -386,7 +386,7 @@ export const projects = [
       image:
        "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
      tags: ["React Js", "Springboot", "MongoDB"],
-     category: "web app",
+     category: "web development",
      github: "https://github.com/AdibaFaiyaz/LoanCheck",
      //webapp: "https://whatsapp-clone-rishav.web.app",
    },
@@ -399,7 +399,7 @@ export const projects = [
      image:
        "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
      tags: ["React Js", "TailwindCSS", "Express Js", "Node Js", "MongoDB"],
-     category: "web app",
+     category: "web development",
      github: "https://github.com/AdibaFaiyaz/MERN-Team-Project",
      webapp: "https://mern-team-project.vercel.app/",
    },
